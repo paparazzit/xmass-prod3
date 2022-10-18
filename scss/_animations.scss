@@ -1,0 +1,43 @@
+@keyframes stickBeat {
+	0% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
+}
+
+@keyframes farting {
+	0% {
+		opacity: 1;
+		transform: scale(0.8) translateX(-80%) rotate(90deg);
+	}
+	50% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 0.2;
+	}
+	85% {
+		opacity: 0.06;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.6) translateX(30%) rotate(90deg);
+	}
+}
+
+@keyframes propAnim {
+	50% {
+		transform: translate(-50%, -120%) scale(1.2);
+		opacity: 0.6;
+	}
+
+	100% {
+		transform: translate(-90%, -90%) scale(0.6);
+		opacity: 0;
+	}
+}
