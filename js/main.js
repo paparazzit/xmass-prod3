@@ -30,8 +30,8 @@ let opt = {
 		hat: {
 			img: "./assets/hat.png",
 			destination: "hat",
-			altImg: false,
-			hiddenImg: "./assets/hat.png",
+			altImg: "./assets/hat.png",
+			hiddenImg: "./assets/hat-2.png",
 		},
 		stick: {
 			img: "./assets/stick.png",
@@ -40,10 +40,10 @@ let opt = {
 			hiddenImg: "./assets/stick.png",
 		},
 		blanket: {
-			img: "./assets/blanket_thumb.png",
+			img: "./assets/blanket_1.png",
 			destination: "blanket",
-			altImg: "./assets/blanket2.png",
-			hiddenImg: "./assets/blanket_thumb.png",
+			altImg: "./assets/blanket_2.png",
+			hiddenImg: "./assets/blanket_1.png",
 		},
 		lolly: {
 			img: "./assets/lolly.png",
@@ -53,10 +53,10 @@ let opt = {
 		},
 
 		bonBon: {
-			img: "./assets/bonbon.png",
+			img: "./assets/gingerMan.png",
 			destination: "mouth",
 			altImg: "",
-			hiddenImg: "./assets/bonbon.png",
+			hiddenImg: "./assets/gingerMan.png",
 		},
 		cane: {
 			img: "./assets/cane.png",

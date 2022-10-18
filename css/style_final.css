@@ -584,26 +584,26 @@ main.landscape {
   transition: 0.4s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .container img.hidden-prop.img-hat {
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 70%;
-  left: 5%;
+  top: 65%;
+  left: 14%;
 }
 .container img.hidden-prop.img-lolly {
   width: 7%;
   height: auto;
-  top: 18%;
-  left: 90%;
+  top: 37%;
+  left: 63%;
   -webkit-transform: translate(-50%, -50%) rotate(25deg);
           transform: translate(-50%, -50%) rotate(25deg);
 }
 .container img.hidden-prop.img-cane {
-  width: 8%;
+  width: 6%;
   height: auto;
   top: 88%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%) rotate(65deg);
-          transform: translate(-50%, -50%) rotate(65deg);
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%) rotate(48deg);
+          transform: translate(-50%, -50%) rotate(48deg);
 }
 .container img.hidden-prop.img-blanket {
   width: 12%;
@@ -614,18 +614,18 @@ main.landscape {
 .container img.hidden-prop.img-bonBon {
   width: 5%;
   height: auto;
-  top: 39.7%;
-  left: 88%;
+  top: 39%;
+  left: 89%;
   -webkit-transform: translate(-50%, -50%) rotate(28deg);
           transform: translate(-50%, -50%) rotate(28deg);
 }
 .container img.hidden-prop.img-stick {
   height: 20%;
   width: auto;
-  top: 53%;
-  left: 22%;
-  -webkit-transform: translate(-50%, -50%) rotate(51deg);
-          transform: translate(-50%, -50%) rotate(51deg);
+  top: 53.3%;
+  left: 23.5%;
+  -webkit-transform: translate(-50%, -50%) rotate(44deg);
+          transform: translate(-50%, -50%) rotate(44deg);
 }
 .container img.hidden-prop.prop-animate {
   -webkit-animation: 0.5s propAnim forwards cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -747,7 +747,8 @@ main.landscape {
       touch-action: manipulation;
 }
 .game-panel .sidebar .thumb {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   -webkit-user-select: none;
@@ -776,8 +777,8 @@ main.landscape {
   pointer-events: none;
 }
 .game-panel .sidebar .thumb img {
-  margin: 0 auto;
-  width: 70%;
+  margin: 0 auto 7px auto;
+  width: 65%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -796,6 +797,18 @@ main.landscape {
 .game-panel .sidebar .thumb img.dragging {
   cursor: none !important;
 }
+.game-panel .sidebar .thumb img[data-item=cane] {
+  width: 45%;
+}
+.game-panel .sidebar .thumb img[data-item=stick] {
+  width: 45%;
+}
+.game-panel .sidebar .thumb img[data-item=bonBon] {
+  width: 60%;
+}
+.game-panel .sidebar .thumb:last-child {
+  margin-bottom: 10px;
+}
 .game-panel .main-panel {
   height: 100%;
   -webkit-box-flex: 0;
@@ -811,9 +824,9 @@ main.landscape {
 }
 .game-panel .main-panel .main-img {
   position: absolute;
-  width: 40%;
-  left: 58%;
-  top: 62%;
+  width: 35%;
+  left: 53%;
+  top: 66%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -828,7 +841,7 @@ main.landscape {
 }
 .game-panel .main-panel .main-img .item_pos.hat {
   height: 40%;
-  width: 55%;
+  width: 52%;
   top: -15%;
 }
 .game-panel .main-panel .main-img .item_pos.hat img {
@@ -836,8 +849,8 @@ main.landscape {
   width: 93%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 30%;
-  left: 60%;
+  top: 26%;
+  left: 47%;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
@@ -855,9 +868,9 @@ main.landscape {
   right: 0;
 }
 .game-panel .main-panel .main-img .item_pos.blanket img {
-  height: 126%;
-  top: 52%;
-  left: 50%;
+  height: 165%;
+  top: 65.8%;
+  left: 70%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: auto;
@@ -866,10 +879,15 @@ main.landscape {
 .game-panel .main-panel .main-img .item_pos.blanket img.present {
   display: block;
   position: absolute;
-  width: 68%;
-  left: 90%;
-  top: 59%;
+  width: 65%;
+  left: 95%;
+  top: 78%;
   height: unset;
+}
+.game-panel .main-panel .main-img .item_pos.blanket img.present[data-opened=opened] {
+  width: 90%;
+  top: 98%;
+  left: 100%;
 }
 .game-panel .main-panel .main-img .item_pos.blanket .fart {
   height: 100%;
@@ -907,8 +925,8 @@ main.landscape {
 .game-panel .main-panel .main-img .face {
   position: absolute;
   width: 50%;
-  top: 20%;
-  left: 2%;
+  top: 17%;
+  left: 1%;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   z-index: 0;

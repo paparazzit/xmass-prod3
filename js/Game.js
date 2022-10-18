@@ -458,7 +458,13 @@ function Game(opt) {
 		this.hitting.play();
 
 		if (this.beatingLog >= 2) {
-			this.faceImg.src = "./assets/angry face.png";
+			this.faceImg.src = "./assets/besna faca 1.png";
+		}
+		if (this.beatingLog >= 3) {
+			this.faceImg.src = "./assets/besna faca 2.png";
+		}
+		if (this.beatingLog >= 4) {
+			this.faceImg.src = "./assets/besna faca 3.png";
 		}
 		if (this.beatingLog > 5) {
 			let fartAnim = document.createElement("div");
@@ -471,7 +477,7 @@ function Game(opt) {
 			setTimeout(() => {
 				fartAnim.classList.add("farting");
 				this.fart.play();
-				this.faceImg.src = "./assets/face.png";
+				this.faceImg.src = "./assets/face_1.png";
 			}, 600);
 			fartAnim.classList.remove("farting");
 
@@ -512,7 +518,7 @@ function Game(opt) {
 			!this.gameStates.present
 		) {
 			this.blanketCont.innerHTML =
-				'<img alt="" src="./assets/present_closed.png" class="present"/>';
+				'<img alt="" src="./assets/present.png" class="present"/>';
 			this.gameStates.present = true;
 			return;
 		}
@@ -523,10 +529,12 @@ function Game(opt) {
 				document.exitFullscreen();
 				screen.orientation.unlock();
 			}
+			e.target.src = "./assets/present_opened.png";
+			e.target.setAttribute("data-opened", "opened");
 
-			setTimeout(() => {
-				this.outroPage.classList.remove("hide");
-			}, 1200);
+			// setTimeout(() => {
+			// 	this.outroPage.classList.remove("hide");
+			// }, 1200);
 			console.log("GOTOVO", window.location);
 		}
 	};
